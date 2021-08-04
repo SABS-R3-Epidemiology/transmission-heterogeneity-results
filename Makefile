@@ -10,4 +10,4 @@ $(FIGURE3N4): results/fig3-fig4-combined-inference-heatmap.ipynb
 	jupyter nbconvert --to notebook --inplace --execute $<
 
 clean:
-	rm -f $(FIGURE3N4)
+	rm -f $(FIGURE3N4) 
