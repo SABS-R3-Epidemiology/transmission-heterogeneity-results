@@ -1,16 +1,14 @@
 # Makefile for paper
 
-NOTEBOOKS = $(wildcard results/fig*.ipynb)
-ANALYSED_FIGURES = $(patsubst results/fig%.ipynb, figures/Figure_%.pdf,$(NOTEBOOKS))
-ANALYSED_FIGURES_RENAMED = $(subst -,_, $(ANALYSED_FIGURES))
+FIGURE3N4 = figures/Figure_3_combined_inference.pdf figures/Figure_4_combined_inference_heatmap.pdf
+
 
 .PHONY: all clean
 
-all: $(ANALYSED_FIGURES_RENAMED)
+all: $(FIGURE3N4)
 
-.SECONDEXPANSION:
-$(ANALYSED_FIGURES_RENAMED): figures/Figure_%.pdf : results/fig$$(subst _,-,$$*).ipynb
+$(FIGURE3N4): results/fig3-fig4-combined-inference-heatmap.ipynb
 	jupyter nbconvert --to notebook --inplace --execute $<
 
 clean:
-	rm -f $(ANALYSED_FIGURES_RENAMED)
+	rm -f $(FIGURE3N4)
