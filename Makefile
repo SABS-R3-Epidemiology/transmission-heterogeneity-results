@@ -2,7 +2,6 @@
 
 FIGURE3N4 = figures/Figure_3_combined_inference.pdf figures/Figure_4_combined_inference_heatmap.pdf
 
-
 .PHONY: all clean
 
 all: $(FIGURE3N4)
