@@ -3,9 +3,17 @@
 This repository holds the results for the [branching process model](https://github.com/SABS-R3-Epidemiology/branchpro).
 
 ## Notebook upload procedure
-1. Make sure the filename of the notebook includes figure number and a description, e.g. fig3-combined-inference. The names are connected by dashes.
-2. Make sure the notebooks save their figures to the figures directory, with consistent filenames matching the paper, e.g. Figure_3_combined_inference. Use underscores for figure names. The description part of the figure filename must match that of the notebook filename. 
-3. Add figure name to list of figures in README.
+1. Add the notebook and figure to the make list in Makefile. For example,
+```bash
+# Add variable of figures produced by the notebook
+$(FIGURE2) = figures/Figure_2_X.pdf
+
+# Add the figure target to the list of make options
+$(FIGURE2) : results/fig2-X.ipynb
+	jupyter nbconvert --to notebook --inplace --execute $<
+```
+with X as the description for the file. Add the variable `$(FIGURE2)` at the of `all` and `clean`.
+2. Add figure name to list of figures in README.
 
 ## Rreproducing figures
 To recreate all figures, type the following commands in the terminal.
