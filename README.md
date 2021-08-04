@@ -13,7 +13,10 @@ $(FIGURE2) : results/fig2-X.ipynb
 	jupyter nbconvert --to notebook --inplace --execute $<
 ```
 with X as the description for the file. Add the variable `$(FIGURE2)` at the of `all` and `clean`.
+
 2. Add figure name to list of figures in README.
+
+Note: Make sure the directory for the data are correct. It might be in a different folder than the `branchpro` repository.
 
 ## Rreproducing figures
 To recreate all figures, type the following commands in the terminal.
