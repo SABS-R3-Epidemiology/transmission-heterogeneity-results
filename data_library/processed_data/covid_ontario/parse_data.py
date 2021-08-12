@@ -36,7 +36,8 @@ def write_state_data(start_date='Sun Mar 01 2020', end_date='Wed Mar 17 2021'):
     """
     # Select data from the given state
     data = pandas.read_csv(
-        os.path.join(os.path.dirname(__file__), 'cases.csv'))
+        os.path.abspath(os.path.join(os.path.dirname(__file__), 
+        '../..', 'raw_data/cases_ontario.csv')))
 
     # Rename date column.
     data = data.rename(columns={'category': 'date'})
