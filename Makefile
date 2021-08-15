@@ -15,3 +15,10 @@ new_zealand_data: data_library/processed_data/covid_new_zealand/parse_data.py
 
 ontario_data: data_library/processed_data/covid_ontario/parse_data.py
 	python3 data_library/processed_data/covid_ontario/parse_data.py
+
+clean: 
+	rm -f data_library/processed_data/covid_australia/*.csv
+	rm -f data_library/processed_data/covid_hawaii/*.csv
+	rm -f data_library/processed_data/covid_new_zealand/*.csv
+	rm -f data_library/processed_data/covid_ontario/*.csv
+
