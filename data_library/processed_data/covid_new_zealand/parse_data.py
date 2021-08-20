@@ -28,8 +28,12 @@ def main():
     """
     # Read the original data
     data = pandas.read_csv(
-        os.path.abspath(os.path.join(os.path.dirname(__file__), 
-        '../..', 'raw_data/cases_new_zealand.csv')))
+        os.path.abspath(os.path.join(
+            os.path.dirname(__file__),
+            os.pardir,
+            os.pardir,
+            'raw_data',
+            'cases_new_zealand.csv')))
     # Initialize a dictionary for the new data
     new_data = defaultdict(lambda: [0, 0])
 

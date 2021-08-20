@@ -38,8 +38,12 @@ def write_state_data(state, start_date='2020-03-01', end_date='2020-05-01'):
     """
     # Select data from the given state
     data = pandas.read_csv(
-        os.path.abspath(os.path.join(os.path.dirname(__file__), 
-        '../..', 'raw_data/cases_australia.csv')))
+        os.path.abspath(os.path.join(
+            os.path.dirname(__file__),
+            os.pardir,
+            os.pardir,
+            'raw_data',
+            'cases_australia.csv')))
     data = data[data['region'] == state]
 
     # Split it into local, imported, and unknown cases
