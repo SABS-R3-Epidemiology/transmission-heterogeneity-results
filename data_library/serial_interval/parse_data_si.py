@@ -45,7 +45,7 @@ import scipy.stats
 
 def write_ser_int_data(name):
     """Write a new csv file for 60-day-long serial intervals
-    to be used for the analysis of the Australian data.
+    to be used for the analysis of the COVID-19 data.
 
     Parameters
     ----------
@@ -98,4 +98,4 @@ def write_ser_int_data(name):
 
 
 if __name__ == '__main__':
-    write_ser_int_data('si-epinow')
+    write_ser_int_data('si-covid')
