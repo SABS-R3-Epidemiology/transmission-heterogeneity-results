@@ -12,7 +12,7 @@ New Zealand data obtained from [3].
 Ontaria data obtained from [4].
 
 5. MERS
-(TODO) add reference
+Saudi Arabia data from [5]. (Imported cases are actually from camels.)
 
 [1] Price, David J., et al. "Early analysis of the Australian COVID-19 epidemic." Elife 9 (2020): e58785.
     https://elifesciences.org/articles/58785/figures#content
@@ -20,8 +20,11 @@ Ontaria data obtained from [4].
 [2] State of Hawaii Department of Health, Disease Outbreak Control Division (DOCD), (last viewed April 14 2021).
     https://health.hawaii.gov/coronavirusdisease2019/what-you-should-know/current-situation-in-hawaii/
 
-[3] Institute of Environmental Science and Research (ESR), (updated April 14 2021). 
+[3] Institute of Environmental Science and Research (ESR), (updated April 14 2021).
     https://nzcoviddashboard.esr.cri.nz/#!/source
 
 [4] Government of Ontario, Public Health Case and Contact Management Solution (CCM), (last viewed March 31 2021).
     https://covid-19.ontario.ca/data/likely-source-infection
+
+[5] Thompson, R. N., et al. "Improved inference of time-varying reproduction
+numbers during infectious disease outbreaks." Epidemics 29 (2019).
