@@ -14,7 +14,7 @@ Ontaria data obtained from [4].
 5. MERS
 Saudi Arabia data from [5]. (Imported cases are actually from camels.)
 
-[1] Price DJ, et al. (2020). Early analysis of the Australian COVID-19 epidemic. Elife 9: e58785.
+[1] Price, D. J., et al. "Early analysis of the Australian COVID-19 epidemic." Elife 9(2020): e58785.
     https://elifesciences.org/articles/58785/figures#content
 
 [2] State of Hawaii Department of Health, Disease Outbreak Control Division (DOCD), (last viewed April 14 2021).
