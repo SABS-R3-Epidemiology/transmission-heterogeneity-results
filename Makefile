@@ -1,14 +1,26 @@
 # Makefile for paper
 
-FIGURE3N4 = figures/Figure_3_combined_inference.pdf figures/Figure_4_combined_inference_heatmap.pdf
-
-
 .PHONY: all clean
 
-all: $(FIGURE3N4)
+all: fig2_fig3 figS1_figS2 figS3 figS4 figS5_figS6 figS7
 
-$(FIGURE3N4): results/fig3-fig4-combined-inference-heatmap.ipynb
+fig2_fig3: results/fig2-fig3-inference-proportion-heatmap.ipynb
+	jupyter nbconvert --to notebook --inplace --execute $<
+
+figS1_figS2: results/figS1-figS2-australia-inference.ipynb
+	jupyter nbconvert --to notebook --inplace --execute $<
+
+figS3: results/figS3-new-zealand-inference.ipynb
+	jupyter nbconvert --to notebook --inplace --execute $<
+
+figS4: results/figS4-hawaii-inference.ipynb
+	jupyter nbconvert --to notebook --inplace --execute $<
+
+figS5_figS6: results/figS5-figS6-MERS.ipynb
+	jupyter nbconvert --to notebook --inplace --execute $<
+
+figS7: results/figS7-serial-interval.ipynb
 	jupyter nbconvert --to notebook --inplace --execute $<
 
 clean:
-	rm -f $(FIGURE3N4)
+	find figures ! -name "Figure_1_schematic.pdf" -type f -exec rm -v {} +
