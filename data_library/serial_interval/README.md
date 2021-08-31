@@ -1,6 +1,6 @@
 # List of sources
-1. Script to generate serial intervals for COVID-19 [1]
-2. Serial interval for MERS [2]
+1. Parameters from a lognormal distribution to generate serial intervals for COVID-19 [1] (lognormal_param.csv)
+2. Serial interval for MERS [2] (si-mers.csv)
 
 [1] Nishiura, H., Linton, N. M., Akhmetzhanov, A. R. "Serial interval of novel coronavirus (COVID-19) infections." International journal of infectious diseases 93(2020): 285-286. (https://github.com/aakhmetz/COVID19SerialInterval)
 
