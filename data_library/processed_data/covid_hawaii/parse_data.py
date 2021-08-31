@@ -36,7 +36,12 @@ def write_state_data(state, start_date='3/5/2020'):
     """
     # Read data
     data = pandas.read_csv(
-        os.path.join(os.path.dirname(__file__), 'cases.csv'))
+        os.path.abspath(os.path.join(
+            os.path.dirname(__file__),
+            os.pardir,
+            os.pardir,
+            'raw_data',
+            'cases_hawaii.csv')))
 
     # Process dates
     data['processed-date'] = [process_dates(x) for x in data['Date Added']]
