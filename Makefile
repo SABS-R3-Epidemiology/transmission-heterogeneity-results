@@ -2,7 +2,9 @@
 
 .PHONY: all clean
 
-all: serial_interval australia_data hawaii_data new_zealand_data ontario_data
+all: serial_interval data
+
+data: australia_data hawaii_data new_zealand_data ontario_data
 
 serial_interval: data_library/serial_interval/parse_data_si.py
 	python3 data_library/serial_interval/parse_data_si.py
