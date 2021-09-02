@@ -4,10 +4,12 @@
 
 all: serial_interval data
 
-data: australia_data hawaii_data new_zealand_data ontario_data
-
+# serial interval
 serial_interval: data_library/serial_interval/parse_data_si.py
 	python3 data_library/serial_interval/parse_data_si.py
+
+# cases data
+data: australia_data hawaii_data new_zealand_data ontario_data
 
 australia_data: data_library/processed_data/covid_australia/parse_data.py
 	python3 data_library/processed_data/covid_australia/parse_data.py
