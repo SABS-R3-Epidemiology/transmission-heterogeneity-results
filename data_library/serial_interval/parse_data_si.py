@@ -8,7 +8,8 @@
 r"""Processing script for COVID serial interval data from [1]_.
 
 It generates multiple serial intervals from a lognormal distribution
-with parameters as given in the reference.
+with parameters as given in the reference. 1000 randomly selected samples of
+the parameters were used.
 https://github.com/aakhmetz/COVID19SerialInterval
 
 To covert the continuous serial interval estimates into discrete daily terms,
@@ -45,7 +46,7 @@ import scipy.stats
 
 def write_ser_int_data(name):
     """Write a new csv file for 60-day-long serial intervals
-    to be used for the analysis of the Australian data.
+    to be used for the analysis of the COVID-19 data.
 
     Parameters
     ----------
@@ -53,7 +54,7 @@ def write_ser_int_data(name):
         Name given to the serial intervals file.
 
     """
-    # Select data from the given state
+    # Read data from the parameters file
     path = os.path.join(
             os.path.dirname(__file__), 'lognormal_param.csv')
     data = pd.read_csv(path, dtype=np.float64)
@@ -62,7 +63,8 @@ def write_ser_int_data(name):
     np.random.seed(0)
 
     # Split it into param1 and param2 of the lognormal distribution
-    # Keep only 1000 of the pairs
+    # Only 1000 randomly selected samples of the lognormal 
+    # parameters are used
     data = data.sample(1000)
     s_data = data['param2'].to_numpy()
     scale_data = data['param1'].to_numpy()
@@ -98,4 +100,4 @@ def write_ser_int_data(name):
 
 
 if __name__ == '__main__':
-    write_ser_int_data('si-epinow')
+    write_ser_int_data('si-covid')
