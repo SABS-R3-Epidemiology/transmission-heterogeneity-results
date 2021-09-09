@@ -46,9 +46,9 @@ make clean_data
 1. `australia_data` - to parse Australia's data
 2. `hawaii_data` - to parse Hawaii's data
 3. `new_zealand_data` - to parse New Zealand's data
-4. `ontario` - to parse Ontario's data
+4. `ontario_data` - to parse Ontario's data
 
-For example, to parse Australia's data, type the following command in the terminal.
+For example, to parse Australia's data:
 ```bash
 make australia_data
 ```
@@ -81,7 +81,7 @@ make clean_figures
 
 Figure_1_schematic.pdf is not reproducible as it is a schematic figure, not created from data.
 
-For example, to reproduce Figure 2 and Figure 3, type the following command in the terminal.
+For example, to reproduce Figure 2 and Figure 3:
 ```bash
 make fig2_fig3
 ```
