@@ -1,25 +1,77 @@
 # transmission-heterogeneity-results
 
-This repository holds the results for the [branching process model](https://github.com/SABS-R3-Epidemiology/branchpro).
+This repository holds the results for the [branching process model](https://github.com/SABS-R3-Epidemiology/branchpro). This includes generating serial interval for COVID-19, parsing data from raw COVID-19 cases dataand reproducing figures from the paper.
 
-## Reproducing figures
-To recreate all figures, type the following commands in the terminal.
+## Reproduce all results (serial interval, parsed data for COVID-19 cases, figures)
+To reproduce all results, including intermediate files:
 ```bash
 make
 ```
 
-To recreate a specfic figures,
+To delete all files created:
+```bash
+make clean
+```
+
+
+## Serial interval
+To generate serial interval for COVID-19:
+```bash
+make serial_interval
+```
+
+To delete file of serial interval for COVID-19:
+```bash
+make clean_serial_interval
+```
+
+
+## COVID-19 cases
+To parse all data from raw COVID-19 cases:
+```bash
+make data
+```
+
+To parse specific data:
+```bash
+make X_data
+```
+where `X` is the name of region. A list of commands to parse the data are given below.
+
+To delete files of parsed data:
+```bash
+make clean_data
+```
+### List of commands to parse data
+1. `australia_data` - to parse Australia's data
+2. `hawaii_data` - to parse Hawaii's data
+3. `new_zealand_data` - to parse New Zealand's data
+4. `ontario` - to parse Ontario's data
+
+For example, to parse Australia's data, type the following command in the terminal.
+```bash
+make australia_data
+```
+
+
+## Figures
+To reproduce all figures:
+```bash
+make figures
+```
+
+To reproduce specfic figure(s):
 ```bash
 make figX
 ```
 where `X` is the figure number. A list of commands to reproduce the figures are given below.
 
-To clear all figures, except the schematic figure (Figure_1_schematic.pdf)
+To delete all figures, except the schematic figure (Figure_1_schematic.pdf):
 ```bash
-make clean
+make clean_figures
 ```
 
-## List of commands
+### List of commands
 1. `fig2_fig3` - to create Figure 2 and Figure 3
 2. `figS1_figS2` - to create Figure S1 and Figure S2
 3. `figS3` - to create Figure S3
