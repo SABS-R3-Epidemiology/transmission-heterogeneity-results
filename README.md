@@ -1,6 +1,6 @@
 # transmission-heterogeneity-results
 
-This repository holds the results for the [branching process model](https://github.com/SABS-R3-Epidemiology/branchpro). This includes generating serial interval for COVID-19, parsing data from raw COVID-19 cases dataand reproducing figures from the paper.
+This repository holds the results for the [branching process model with imported cases](https://github.com/SABS-R3-Epidemiology/branchpro). This includes generating serial interval for COVID-19, parsing data from raw COVID-19 cases data and reproducing figures from the paper.
 
 ## Reproduce all results (serial interval, parsed data for COVID-19 cases, figures)
 To reproduce all results, including intermediate files:
