@@ -53,6 +53,13 @@ For example, to parse Australia's data:
 make australia_data
 ```
 
+## Calculate epsilon
+The value of epsilon (relative transmissibility of imported cases) has been
+approximated for several territories where appropriate data is available. These
+calculations can be performed using
+```bash
+make calculate_epsilon
+```
 
 ## Figures
 To reproduce all figures:
