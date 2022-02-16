@@ -2,7 +2,7 @@
 
 .PHONY: all clean
 
-all: serial_interval data figures
+all: serial_interval data figures calculate_epsilon
 
 
 # serial interval
@@ -12,6 +12,8 @@ serial_interval: data_library/serial_interval/parse_data_si.py
 clean_serial_interval:
 	rm -f data_library/serial_interval/si-covid.csv
 
+calculate_epsilon: results/calculate_epsilon.ipynb
+	jupyter nbconvert --to notebook --inplace --execute $<
 
 # cases data
 data: australia_data hawaii_data new_zealand_data ontario_data
@@ -28,7 +30,7 @@ new_zealand_data: data_library/processed_data/covid_new_zealand/parse_data.py
 ontario_data: data_library/processed_data/covid_ontario/parse_data.py
 	python3 data_library/processed_data/covid_ontario/parse_data.py
 
-clean_data: 
+clean_data:
 	rm -f data_library/processed_data/covid_australia/*.csv
 	rm -f data_library/processed_data/covid_hawaii/*.csv
 	rm -f data_library/processed_data/covid_new_zealand/*.csv
