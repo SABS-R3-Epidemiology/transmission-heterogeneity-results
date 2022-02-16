@@ -44,9 +44,12 @@ clean_data:
 
 
 # figures
-figures: fig2_fig3 figS1_figS2 figS3 figS4 figS5_figS6 figS7
+figures: fig2_fig3 fig4 figS1_figS2 figS3 figS4 figS5_figS6 figS7
 
 fig2_fig3: results/fig2-fig3-inference-proportion-heatmap.ipynb
+	jupyter nbconvert --to notebook --inplace --execute $<
+
+fig4: results/fig4-hong-kong-hainan-inference.ipynb
 	jupyter nbconvert --to notebook --inplace --execute $<
 
 figS1_figS2: results/figS1-figS2-australia-inference.ipynb
