@@ -81,11 +81,12 @@ make clean_figures
 
 ### List of commands to reproduce figures
 1. `fig2_fig3` - to reproduce Figure 2 and Figure 3
-2. `figS1_figS2` - to reproduce Figure S1 and Figure S2
-3. `figS3` - to reproduce Figure S3
-2. `figS4` - to reproduce Figure S4
-2. `figS5_figS6` - to reproduce Figure S5 and Figure S6
-2. `figS7` - to reproduce Figure S7
+2. `fig4` - to reproduce Figure 4
+3. `figS1_figS2` - to reproduce Figure S1 and Figure S2
+4. `figS3` - to reproduce Figure S3
+5. `figS4` - to reproduce Figure S4
+6. `figS5_figS6` - to reproduce Figure S5 and Figure S6
+7. `figS7` - to reproduce Figure S7
 
 Figure_1_schematic.pdf is not reproducible as it is a schematic figure, not created from data.
 
