@@ -44,9 +44,11 @@ make clean_data
 ```
 ### List of commands to parse data
 1. `australia_data` - to parse Australia's data
-2. `hawaii_data` - to parse Hawaii's data
-3. `new_zealand_data` - to parse New Zealand's data
-4. `ontario_data` - to parse Ontario's data
+2. `hainan_data` - to parse Hainan's data
+3. `hawaii_data` - to parse Hawaii's data
+4. `hong_kong_data` - to parse Hong Kong's data
+5. `new_zealand_data` - to parse New Zealand's data
+6. `ontario_data` - to parse Ontario's data
 
 For example, to parse Australia's data:
 ```bash
@@ -87,6 +89,7 @@ make clean_figures
 5. `figS4` - to reproduce Figure S4
 6. `figS5_figS6` - to reproduce Figure S5 and Figure S6
 7. `figS7` - to reproduce Figure S7
+8. `figS8` - to reproduce Figure S8
 
 Figure_1_schematic.pdf is not reproducible as it is a schematic figure, not created from data.
 
