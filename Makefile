@@ -46,7 +46,7 @@ clean_data:
 
 
 # figures
-figures: fig2_fig3 fig4 figS1_figS2 figS3 figS4 figS5_figS6 figS7
+figures: fig2_fig3 fig4 figS1_figS2 figS3 figS4 figS5_figS6 figS7 figS8
 
 fig2_fig3: results/fig2-fig3-inference-proportion-heatmap.ipynb
 	jupyter nbconvert --to notebook --inplace --execute $<
@@ -67,6 +67,9 @@ figS5_figS6: results/figS5-figS6-MERS.ipynb
 	jupyter nbconvert --to notebook --inplace --execute $<
 
 figS7: results/figS7-serial-interval.ipynb
+	jupyter nbconvert --to notebook --inplace --execute $<
+
+figS8: results/figS8-forward-simulation.ipynb
 	jupyter nbconvert --to notebook --inplace --execute $<
 
 clean_figures:
