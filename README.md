@@ -1,6 +1,11 @@
 # transmission-heterogeneity-results
 
-This repository holds the results for the [branching process model with imported cases](https://github.com/SABS-R3-Epidemiology/branchpro). This includes generating serial interval for COVID-19, parsing data from raw COVID-19 cases data and reproducing figures from the paper. To reproduce the results, the branchpro package, which is provided in the link above, is required. The jupyter library is also required.
+This repository holds the results for the [branching process model with imported cases](https://github.com/SABS-R3-Epidemiology/branchpro). This includes generating serial interval for COVID-19, parsing data from raw COVID-19 cases data and reproducing figures from the paper. To reproduce the results, the branchpro package, which is provided in the link above, is required. The jupyter library is also required. 
+
+More details can be found in the paper:
+
+- <a href="https://royalsocietypublishing.org/doi/10.1098/rsta.2021.0308" target="_blank">R. Creswell,<sup>†</sup> D. Augustin,<sup>†</sup> I. Bouros,<sup>†</sup> H. J. Farm,<sup>†</sup> S. Miao,<sup>†</sup> A. Ahern,<sup>†</sup> M. Robinson, A. Lemenuel-Diot, D. J. Gavaghan, B. C. Lambert and R. N. Thompson: “Heterogeneity in the onwards transmission risk between local and imported cases affects practical estimates of the time-dependent reproduction number,” <em>Phil. Trans. R. Soc. A.</em> 380: 20210308 (2022).</a> <sup>†</sup>Joint first authors.
+
 
 ## Reproduce all results (serial interval, parsed data for COVID-19 cases, figures)
 To reproduce all results, including intermediate files:
